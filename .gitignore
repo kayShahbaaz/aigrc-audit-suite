@@ -1,0 +1,61 @@
+# =============================================================
+# AI GRC Audit Suite — .gitignore
+# =============================================================
+
+# --- Secrets — NEVER commit these ---
+.env
+*.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+.eggs/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# --- ChromaDB vector database (large, auto-generated) ---
+data/chroma_db/
+
+# --- Generated output files (client deliverables — not for git) ---
+*.docx
+*.pdf
+*.xlsx
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Streamlit cache ---
+.streamlit/
+
+# --- HuggingFace model cache (large downloads) ---
+.cache/
+models/
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Jupyter (in case used for testing) ---
+.ipynb_checkpoints/
+*.ipynb

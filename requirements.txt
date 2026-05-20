@@ -1,0 +1,40 @@
+# AI GRC Audit Suite — Pinned Requirements
+# Tested on Python 3.10, macOS
+# These exact versions are confirmed compatible with each other.
+
+# UI
+streamlit
+
+# LLM
+groq
+
+# LangChain (only used for future features — not critical path)
+langchain
+langchain-community
+langchain-text-splitters
+langchain-huggingface
+
+# Vector DB
+chromadb
+
+# Embeddings — PINNED: these three must match exactly
+# numpy 1.x required by torch 2.2.x
+# transformers 4.44.2 = last version before nn.Module annotation bug
+# sentence-transformers 2.7.0 = last version compatible with transformers 4.44.2
+numpy==1.26.4
+torch==2.2.2
+transformers==4.44.2
+sentence-transformers==2.7.0
+
+# Document export
+pandas
+openpyxl
+fpdf2
+python-docx
+
+# Document reading
+pypdf
+docx2txt
+
+# Utilities
+python-dotenv
