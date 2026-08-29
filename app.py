@@ -95,7 +95,7 @@ _qp = st.query_params.get("theme", None)
 if _qp in ("dark", "light"):
     st.session_state["theme"] = _qp
 elif "theme" not in st.session_state:
-    st.session_state["theme"] = "light"
+    st.session_state["theme"] = "dark"
 
 _is_dark = st.session_state["theme"] == "dark"
 
